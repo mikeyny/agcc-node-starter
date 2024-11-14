@@ -190,8 +190,9 @@ In this tutorial, we will create a simple to-do list app using **Node.js**, **Ex
 
    - Open `app.js` and add the following code to set up routes for the to-do list:
      ```javascript
+     let tasks = [];
      app.get("/", (req, res) => {
-       res.render("index", { tasks: [] });
+       res.render("index", { tasks });
      });
 
      app.post("/add", (req, res) => {
