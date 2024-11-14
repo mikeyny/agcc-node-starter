@@ -120,7 +120,7 @@ In this tutorial, we will create a simple to-do list app using **Node.js**, **Ex
 
    - Update `app.js` to use Handlebars as the templating engine:
      ```javascript
-     const handlebars = require("express-handlebars");
+     const handlebars = require("express-handlebars").engine;
 
      app.engine("hbs", handlebars({ extname: ".hbs" }));
      app.set("view engine", "hbs");
