@@ -82,7 +82,6 @@ In this tutorial, we will create a simple to-do list app using **Node.js**, **Ex
      <head>
        <meta charset="UTF-8">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link href="style.css" rel="stylesheet">
        <title>Basic HTML Page</title>
      </head>
      <body>
@@ -92,24 +91,8 @@ In this tutorial, we will create a simple to-do list app using **Node.js**, **Ex
      </html>
      ```
 
-3. **Add a Static CSS File**
-   - Create a file named `style.css` in the `public` folder to style your HTML page:
-     ```bash
-     touch public/style.css
-     ```
-   - Add the following simple CSS code to `style.css`:
-     ```css
-     body {
-       font-family: Arial, sans-serif;
-       background-color: #f0f0f0;
-     }
 
-     h1 {
-       color: #333;
-     }
-     ```
-
-4. **Serve Static Files in Express**
+3. **Serve Static Files in Express**
    - Update `app.js` to serve static files from the `public` directory:
      ```javascript
      const path = require("path");
